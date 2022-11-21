@@ -1,0 +1,19 @@
+{
+  "name": "arc-webinars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "webpack serve --more development"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AirlinesReportingCorporation/arc-webinars/issues"
+  },
+  "homepage": "https://github.com/AirlinesReportingCorporation/arc-webinars#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
