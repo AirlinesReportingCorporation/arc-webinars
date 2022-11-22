@@ -26,6 +26,13 @@ class Webinars extends Component {
             "Watch this information session where Tony Ashe from WorldPay will take you through trends and provide insight into global markets"
           }
         />
+        <div className="row">
+          <div className="col-lg-12 webinar-header">
+            <h2 className="text-left webinar-header-inner">
+              Latest Webinars
+            </h2>
+          </div>
+        </div>
       </>
     );
   }

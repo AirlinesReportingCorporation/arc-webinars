@@ -4,3 +4,17 @@
 #app {
     flex-direction: column;
 }
+
+.webinar-header {
+    padding-left: 0;
+}
+
+.webinar-header-inner {
+    width: 100%;
+    font-family: SourceSansPro-SemiBold,Arial,Helvetica,sans-serif;
+    font-size: 38px;
+    line-height: 47px;
+    margin: 60px 0;
+    color: #242039;
+    justify-content: left;
+}
