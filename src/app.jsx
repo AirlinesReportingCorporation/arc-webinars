@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import WebinarJumbo from "./components/WebinarJumbo";
 import WebinarAlert from "./components/WebinarAlert";
 import WebinarPost from "./components/WebinarPost";
+import YoutubeFeature from "./components/YoutubeFeature";
 
 class Webinars extends Component {
   constructor() {
@@ -21,7 +22,6 @@ class Webinars extends Component {
     var postArray = document.querySelectorAll(
       ".content-block--pageItem__inside"
     );
-    console.log(postArray)
     let i = startIndex;
     console.log(i);
     while (i < endIndex && i < postArray.length) {
@@ -99,7 +99,7 @@ class Webinars extends Component {
             <div className="ctaBtn" onClick={this.showMore}>View More</div>
           </div>
         </div>
-        
+        <YoutubeFeature background="https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg" description="Subscribe to our YouTube channel." title="Stay Up to Date with the Latest Industry Knowledge."/>
 
       </>
     );

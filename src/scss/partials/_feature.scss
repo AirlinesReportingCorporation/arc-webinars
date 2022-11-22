@@ -1,0 +1,62 @@
+.feature-jumbo {
+    width: 100%;
+    max-width: 100vw;
+
+}
+
+.container-longer {
+    padding-right: 15px;
+    max-width: 100%;
+    margin-left: 150px;
+    padding: 0;
+
+    .row {
+        max-width: inherit;
+        margin: 0;
+    padding: 0;
+    }
+}
+
+.feature-cta {
+    background: #b91818;
+    border-color: #b91818;
+    padding: 13px 17px;
+    font-size: 21px;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+.fa-youtube:before {
+    content: "\f167";
+}
+
+.feature-jumbo-image{
+    background: center center / cover no-repeat;
+    padding: 87px 50px;
+    margin-top: 80px;
+
+}
+
+.feature-jumbo-title {
+    max-width: 600px;
+    margin-bottom: 15px;
+
+    a {
+        font-family: SourceSansPro-Regular,Arial,Helvetica,sans-serif;
+        font-size: 48px;
+        line-height: 60px;
+        color: #fff;
+    }
+}
+
+.feature-jumbo-title a:hover {
+    color: #fff;
+}
+
+.feature-jumbo-desc {
+    font-family: SourceSansPro-Light,SourceSansPro-Regular,Arial,Helvetica,sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    color: #fff;
+    margin-bottom: 25px;
+}

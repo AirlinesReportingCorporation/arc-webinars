@@ -1,6 +1,7 @@
 @use "./partials/jumbo";
 @use "./partials/alert";
 @use "./partials/post";
+@use "./partials/feature";
 
 #app {
     flex-direction: column;
@@ -18,4 +19,5 @@
 
 .webinar-btn {
     text-align: center;
+    margin-bottom: 60px;
 }
