@@ -1,1 +1,6 @@
 @use "./partials/jumbo";
+@use "./partials/alert";
+
+#app {
+    flex-direction: column;
+}
