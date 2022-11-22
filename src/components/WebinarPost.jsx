@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 
+// Check to see if image exists, if not, override the 404
+function imageExists(image_url) {
+    var http = new XMLHttpRequest();  
+    http.open("HEAD", image_url, false);
+    http.send();
+    return http.status != 404;
+  }
+
+
 class WebinarPost extends Component {
   constructor(props) {
     super(props);

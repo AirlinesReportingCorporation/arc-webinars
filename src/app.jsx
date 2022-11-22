@@ -6,7 +6,57 @@ import WebinarPost from "./components/WebinarPost";
 class Webinars extends Component {
   constructor() {
     super();
+    this.state = {
+      posts: [],
+      curIndex: 6,
+      prevIndex: 0,
+    };
   }
+
+  componentDidMount() {
+    this.getPosts(this.state.prevIndex, this.state.curIndex);
+  }
+
+  getPosts = (startIndex, endIndex) => {
+    var postArray = document.querySelectorAll(
+      ".content-block--pageItem__inside"
+    );
+    console.log(postArray[0].querySelector(".content-block--pageItem__metadata").lastElementChild.innerHTML
+    )
+    let i = startIndex;
+    console.log(i);
+    while (i < endIndex) {
+      const post = postArray[i];
+      var tempPosts = this.state.posts;
+      tempPosts.push({
+        link: post.querySelector(".ctaLink").getAttribute("href"),
+        title: post.querySelector(".ctaLink").getAttribute("title"),
+        tag: post
+          .querySelector(".content-block--pageItem__metadata")
+          .lastElementChild.innerHTML,
+        date: post.querySelector(".content-block--pageItem__metadata")
+        .firstElementChild.innerHTML,
+        webinar: post.querySelector(".ctaLink").getAttribute("href").split("/")[4],
+      });
+      i++;
+    }
+    this.setState({ posts: tempPosts });
+    // We return the next 6 items -- the first time running will be 0 - 5th index
+  };
+
+  showMore = () => {
+      var tempIndex = this.state.curIndex;
+      this.setState(
+        { prevIndex: tempIndex, curIndex: (tempIndex += 6) },
+        () => {
+          this.getPosts(this.state.prevIndex, this.state.curIndex);
+        }
+      );
+      console.log("show more with no filter");
+    console.log("click");
+  };
+
+
 
   render() {
     return (
@@ -35,9 +85,20 @@ class Webinars extends Component {
           </div>
         </div>
         <div className="row">
-        <WebinarPost title={"Addressing Fraud in a Post-Pandemic Era"} tag={"Online Webinar"} date={"Sep 30, 2022"} link="https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-093022/" webinar="webinar-093022"/>
-        <WebinarPost title={"Addressing Fraud in a Post-Pandemic Era"} tag={"Online Webinar"} date={"Sep 30, 2022"} link="https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-093022/" webinar="webinar-093022"/>
-        <WebinarPost title={"Addressing Fraud in a Post-Pandemic Era"} tag={"Online Webinar"} date={"Sep 30, 2022"} link="https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-093022/" webinar="webinar-093022"/>
+        {this.state.posts.map((post) => (
+              <WebinarPost
+                title={post.title}
+                link={post.link}
+                tag={post.tag}
+                date={post.date}
+                webinar={post.webinar}
+              />
+            ))}{" "}
+        </div>
+        <div className="row">
+          <div className="col-lg-12 webinar-btn">
+            <div className="ctaBtn" onClick={this.showMore}>View More</div>
+          </div>
         </div>
         
 
