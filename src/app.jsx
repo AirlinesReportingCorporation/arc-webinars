@@ -21,11 +21,10 @@ class Webinars extends Component {
     var postArray = document.querySelectorAll(
       ".content-block--pageItem__inside"
     );
-    console.log(postArray[0].querySelector(".content-block--pageItem__metadata").lastElementChild.innerHTML
-    )
+    console.log(postArray)
     let i = startIndex;
     console.log(i);
-    while (i < endIndex) {
+    while (i < endIndex && i < postArray.length) {
       const post = postArray[i];
       var tempPosts = this.state.posts;
       tempPosts.push({
