@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import WebinarJumbo from "./components/WebinarJumbo";
 import WebinarAlert from "./components/WebinarAlert";
+import WebinarPost from "./components/WebinarPost";
 
 class Webinars extends Component {
   constructor() {
@@ -33,6 +34,13 @@ class Webinars extends Component {
             </h2>
           </div>
         </div>
+        <div className="row">
+        <WebinarPost title={"Addressing Fraud in a Post-Pandemic Era"} tag={"Online Webinar"} date={"Sep 30, 2022"} link="https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-093022/" webinar="webinar-093022"/>
+        <WebinarPost title={"Addressing Fraud in a Post-Pandemic Era"} tag={"Online Webinar"} date={"Sep 30, 2022"} link="https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-093022/" webinar="webinar-093022"/>
+        <WebinarPost title={"Addressing Fraud in a Post-Pandemic Era"} tag={"Online Webinar"} date={"Sep 30, 2022"} link="https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-093022/" webinar="webinar-093022"/>
+        </div>
+        
+
       </>
     );
   }

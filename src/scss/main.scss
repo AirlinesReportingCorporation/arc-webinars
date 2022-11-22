@@ -1,12 +1,9 @@
 @use "./partials/jumbo";
 @use "./partials/alert";
+@use "./partials/post";
 
 #app {
     flex-direction: column;
-}
-
-.webinar-header {
-    padding-left: 0;
 }
 
 .webinar-header-inner {
