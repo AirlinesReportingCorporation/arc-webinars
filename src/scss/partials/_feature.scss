@@ -60,3 +60,9 @@
     color: #fff;
     margin-bottom: 25px;
 }
+
+@media (max-width: 576px) {
+    .container-longer {
+        margin-left: unset;
+    }
+  }
