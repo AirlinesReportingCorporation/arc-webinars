@@ -66,3 +66,9 @@
         margin-left: unset;
     }
   }
+
+  @media (min-width: 576px) {
+    .container-longer {
+        margin-left: 75px;
+    }
+  }
