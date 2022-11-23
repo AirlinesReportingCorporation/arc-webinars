@@ -35,7 +35,7 @@ class Webinars extends Component {
           .lastElementChild.innerHTML,
         date: post.querySelector(".content-block--pageItem__metadata")
         .firstElementChild.innerHTML,
-        webinar: post.querySelector(".ctaLink").getAttribute("href").split("/")[4],
+        webinar: (post.querySelector(".ctaLink").getAttribute("href").split("/")[4] == "" ? post.querySelector(".ctaLink").getAttribute("href").split("/")[3] : post.querySelector(".ctaLink").getAttribute("href").split("/")[4]),
       });
       i++;
     }
