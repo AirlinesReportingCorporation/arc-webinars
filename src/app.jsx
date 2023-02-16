@@ -105,7 +105,7 @@ class Webinars extends Component {
           <div className="col-lg-12 webinar-btn">
             <div className="ctaBtn" style={{
                   display: this.state.posts.length == this.state.maxPosts ? "none" : "inline-block",
-                  width: "220px",
+                  width: "220px", cursor: "pointer"
                 }} onClick={this.showMore}>View More</div>
           </div>
         </div>
