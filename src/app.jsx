@@ -11,6 +11,7 @@ class Webinars extends Component {
       posts: [],
       curIndex: 6,
       prevIndex: 0,
+      maxPosts: 0
     };
   }
 
@@ -22,6 +23,9 @@ class Webinars extends Component {
     var postArray = document.querySelectorAll(
       ".content-block--pageItem__inside"
     );
+    console.log(postArray.length);
+    this.setState({maxPosts: postArray.length})
+
     let i = startIndex;
     console.log(i);
     while (i < endIndex && i < postArray.length) {
@@ -44,6 +48,7 @@ class Webinars extends Component {
   };
 
   showMore = () => {
+    console.log(this.state.tempPosts)
       var tempIndex = this.state.curIndex;
       this.setState(
         { prevIndex: tempIndex, curIndex: (tempIndex += 6) },
@@ -58,6 +63,8 @@ class Webinars extends Component {
 
 
   render() {
+    console.log(this.state.maxPosts)
+    console.log(this.state.tempPosts == this.state.maxPosts)
     return (
       <>
       <WebinarAlert/>
@@ -96,7 +103,10 @@ class Webinars extends Component {
         </div>
         <div className="row">
           <div className="col-lg-12 webinar-btn">
-            <div className="ctaBtn" onClick={this.showMore}>View More</div>
+            <div className="ctaBtn" style={{
+                  display: this.state.posts.length == this.state.maxPosts ? "none" : "inline-block",
+                  width: "220px",
+                }} onClick={this.showMore}>View More</div>
           </div>
         </div>
         <YoutubeFeature background="https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg" description="Subscribe to our YouTube channel." title="Stay Up to Date with the Latest Industry Knowledge."/>
