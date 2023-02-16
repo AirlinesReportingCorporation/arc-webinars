@@ -99,7 +99,7 @@ class Webinars extends Component {
                 date={post.date}
                 webinar={post.webinar}
               />
-            ))}{" "}
+            ))}
         </div>
         <div className="row">
           <div className="col-lg-12 webinar-btn">
