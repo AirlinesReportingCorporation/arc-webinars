@@ -4,6 +4,10 @@
 @use "./partials/feature";
 
 #app {
+    justify-content: center;
+}
+
+.webinar-page {
     flex-direction: column;
 }
 

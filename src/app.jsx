@@ -66,7 +66,7 @@ class Webinars extends Component {
     console.log(this.state.maxPosts)
     console.log(this.state.tempPosts == this.state.maxPosts)
     return (
-      <>
+      <div className="webinar-page">
       <WebinarAlert/>
         <WebinarJumbo
           background={
@@ -111,7 +111,7 @@ class Webinars extends Component {
         </div>
         <YoutubeFeature background="https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg" description="Subscribe to our YouTube channel." title="Stay Up to Date with the Latest Industry Knowledge."/>
 
-      </>
+      </div>
     );
   }
 }
