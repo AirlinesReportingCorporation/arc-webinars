@@ -9,6 +9,9 @@
 
 .webinar-page {
     flex-direction: column;
+    .row {
+        max-width: none;
+    }
 }
 
 .webinar-header-inner {
