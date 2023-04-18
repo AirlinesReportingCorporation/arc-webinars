@@ -66,8 +66,7 @@ class Webinars extends Component {
     return (
       <div>
         <WebinarAlert />
-        <div className="container">
-          <WebinarJumbo
+        <WebinarJumbo
             background={
               "https://www2.arccorp.com/globalassets/homepage/redesign/slides/fraud-awareness-webinar-jumbo.jpg"
             }
@@ -82,6 +81,8 @@ class Webinars extends Component {
               "Fraudsters are becoming more persistent and sophisticated in their tactics — you must take proactive steps to identify and prevent fraud and limit financial exposure."
             }
           />
+        <div className="container">
+          
           <div className="row">
             <div className="col-lg-12 webinar-header">
               <h2 className="text-left webinar-header-inner">
