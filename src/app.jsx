@@ -69,17 +69,17 @@ class Webinars extends Component {
         <div className="container">
           <WebinarJumbo
             background={
-              "https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel15.jpg"
+              "https://www2.arccorp.com/globalassets/homepage/redesign/slides/fraud-awareness-webinar-jumbo.jpg"
             }
             tag={"Fraud Webinar"}
             link={
-              "https://www2.arccorp.com/support-training/fraud-prevention/archived-fraud-webinars/2021-archived-fraud/webinar-091621/"
+              "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-041223/"
             }
             title={
-              "An Analytical View on 100 Billion Transactions by Worldpay/FIS"
+              "ARC Fraud Awareness Webinar: Travel Industry Fraud & Scams"
             }
             description={
-              "Watch this information session where Tony Ashe from WorldPay will take you through trends and provide insight into global markets"
+              "Fraudsters are becoming more persistent and sophisticated in their tactics — you must take proactive steps to identify and prevent fraud and limit financial exposure."
             }
           />
           <div className="row">
