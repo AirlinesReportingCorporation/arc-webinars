@@ -67,7 +67,7 @@ class Webinars extends Component {
       <div>
         <WebinarAlert />
         <WebinarJumbo
-            tag={"Fraud Webinar"}
+            tag={"Webinar"}
             link={
               "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-081723/"
             }

@@ -15,7 +15,7 @@ class WebinarJumbo extends Component {
                 className="text-left webinar-jumbo-image"
                 style={{
                   backgroundImage: (this.props.background ? "url(" + this.props.background + ")" : ""),
-                  backgroundColor: "#2a2b2c",
+                  backgroundColor: (this.props.backgroundColor ? this.props.backgroundColor : "#2a2b2c"),
                   width: "100%",
                 }}
               >
