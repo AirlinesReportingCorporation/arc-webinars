@@ -67,18 +67,15 @@ class Webinars extends Component {
       <div>
         <WebinarAlert />
         <WebinarJumbo
-            background={
-              "https://www2.arccorp.com/globalassets/homepage/redesign/slides/fraud-awareness-webinar-jumbo.jpg"
-            }
             tag={"Fraud Webinar"}
             link={
-              "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-041223/"
+              "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-081723/"
             }
             title={
-              "ARC Fraud Awareness Webinar: Travel Industry Fraud & Scams"
+              "Partnerships & Payments: Keeping Pace with the Rapidly Changing Payment Landscape"
             }
             description={
-              "Fraudsters are becoming more persistent and sophisticated in their tactics — you must take proactive steps to identify and prevent fraud and limit financial exposure."
+              "Were you unable to attend ARC Payments Forum 2023 or want to revisit the information? You're in luck! We have the info you're looking for."
             }
           />
         <div className="container">
