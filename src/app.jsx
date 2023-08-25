@@ -68,6 +68,7 @@ class Webinars extends Component {
         <WebinarAlert />
         <WebinarJumbo
             tag={"Webinar"}
+            background={"https://www2.arccorp.com/globalassets/homepage/redesign/webinar/header.png"}
             link={
               "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-081723/"
             }
