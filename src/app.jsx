@@ -70,13 +70,13 @@ class Webinars extends Component {
             tag={"Webinar"}
             background={"https://www2.arccorp.com/globalassets/homepage/redesign/webinar/header.png"}
             link={
-              "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-081723/"
+              "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-083123/"
             }
             title={
-              "Partnerships & Payments: Keeping Pace with the Rapidly Changing Payment Landscape"
+              "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation"
             }
             description={
-              "Were you unable to attend ARC Payments Forum 2023 or want to revisit the information? You're in luck! We have the info you're looking for."
+              "Were you unable to New Distribution Capability (NDC) is growing here in the U.S. Watch this webinar to learn about NDC’s history as an enhanced distribution option, the driving forces behind it and how ARC supports travel innovation through our Direct Connect program.attend ARC Payments Forum 2023 or want to revisit the information? You're in luck! We have the info you're looking for."
             }
           />
         <div className="container">
