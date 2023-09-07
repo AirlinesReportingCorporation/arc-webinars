@@ -76,7 +76,7 @@ class Webinars extends Component {
               "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation"
             }
             description={
-              "Were you unable to New Distribution Capability (NDC) is growing here in the U.S. Watch this webinar to learn about NDC’s history as an enhanced distribution option, the driving forces behind it and how ARC supports travel innovation through our Direct Connect program.attend ARC Payments Forum 2023 or want to revisit the information? You're in luck! We have the info you're looking for."
+              "Learn about the history of this enhanced distribution option, the driving forces behind NDC and how ARC supports travel innovation through our Direct Connect program."
             }
           />
         <div className="container">
