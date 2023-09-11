@@ -67,20 +67,21 @@ class Webinars extends Component {
       <div>
         <WebinarAlert />
         <WebinarJumbo
-            tag={"Webinar"}
-            background={"https://www2.arccorp.com/globalassets/homepage/redesign/webinar/header.png"}
-            link={
-              "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-083123/"
-            }
-            title={
-              "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation"
-            }
-            description={
-              "Learn about the history of this enhanced distribution option, the driving forces behind NDC and how ARC supports travel innovation through our Direct Connect program."
-            }
-          />
+          tag={"Webinar"}
+          background={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/webinar/header.png"
+          }
+          link={
+            "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-083123/"
+          }
+          title={
+            "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation"
+          }
+          description={
+            "Learn about the history of this enhanced distribution option, the driving forces behind NDC and how ARC supports travel innovation through our Direct Connect program."
+          }
+        />
         <div className="container">
-          
           <div className="row">
             <div className="col-lg-12 webinar-header">
               <h2 className="text-left webinar-header-inner">
@@ -117,11 +118,13 @@ class Webinars extends Component {
               </div>
             </div>
           </div>
-          <YoutubeFeature
-            background="https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg"
-            description="Subscribe to our YouTube channel."
-            title="Stay Up to Date with the Latest Industry Knowledge."
-          />
+          <a href="https://www.youtube.com/c/airlinesreportingcorporation">
+            <YoutubeFeature
+              background="https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg"
+              description="Subscribe to our YouTube channel."
+              title="Stay Up to Date with the Latest Industry Knowledge."
+            />
+          </a>
         </div>
       </div>
     );
