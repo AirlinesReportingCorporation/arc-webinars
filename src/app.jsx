@@ -72,7 +72,7 @@ class Webinars extends Component {
             "https://www2.arccorp.com/globalassets/homepage/redesign/webinar/header.png"
           }
           link={
-            "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-083123/"
+            "https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-083123/"
           }
           title={
             "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation"
