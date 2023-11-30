@@ -59,6 +59,7 @@ class Webinars extends Component {
     console.log("show more with no filter");
     console.log("click");
   };
+  
 
   render() {
     console.log(this.state.maxPosts);
